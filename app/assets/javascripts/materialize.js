@@ -3321,7 +3321,7 @@ function PickerConstructor( ELEMENT, NAME, COMPONENT, OPTIONS ) {
                     P.$root.addClass( CLASSES.opened )
                     aria( P.$root[0], 'hidden', false )
 
-                }, 0 )
+                }, 100 )
 
                 // If we have to give focus, bind the element and doc events.
                 if ( dontGiveFocus !== false ) {
@@ -3356,7 +3356,7 @@ function PickerConstructor( ELEMENT, NAME, COMPONENT, OPTIONS ) {
 
                             // If the target was the holder that covers the screen,
                             // keep the element focused to maintain tabindex.
-//                            P.close( target === P.$root.children()[0] )
+                            P.close( target === P.$root.children()[0] )
                         }
 
                     }).on( 'keydown.' + STATE.id, function( event ) {
