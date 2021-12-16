@@ -3321,7 +3321,7 @@ function PickerConstructor( ELEMENT, NAME, COMPONENT, OPTIONS ) {
                     P.$root.addClass( CLASSES.opened )
                     aria( P.$root[0], 'hidden', false )
 
-                }, 0 )
+                }, 100 )
 
                 // If we have to give focus, bind the element and doc events.
                 if ( dontGiveFocus !== false ) {
